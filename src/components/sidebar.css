@@ -1,0 +1,72 @@
+.sidebar {
+  position: fixed;
+  top: 10px; /* small gap from the top */
+  bottom: 10px; /* small gap from the bottom */
+  left: 0;
+  width: 80px;
+  background-color: #ffffff;
+  border-top: 4px solid #FFA500;
+  border-right: 4px solid #FFA500;
+  border-bottom: 4px solid #FFA500;
+  /* No left border */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+
+
+.sidebar-logo {
+  margin-bottom: 30px;
+}
+
+.sidebar-logo img {
+  width: 50px;
+  height: auto;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.nav-item img {
+  width: 30px;
+  height: auto;
+  transition: all 0.3s ease;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.nav-item.active img,
+.nav-item:hover img {
+  border: 4px solid #FFA500; /* Orange border when hovered or active */
+  filter: brightness(90%);
+  cursor: pointer;
+}
+
+
+.sidebar-logout {
+  margin-top: auto; /* Pushes logout button to the bottom */
+  margin-bottom: 20px; /* Space from the bottom */
+}
+
+.sidebar-logout img {
+  width: 30px;
+  height: auto;
+  transition: all 0.3s ease;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.sidebar-logout:hover img {
+  border: 4px solid #FFA500; /* Same hover effect */
+  filter: brightness(90%);
+  cursor: pointer;
+}
